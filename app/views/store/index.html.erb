@@ -1,0 +1,31 @@
+<div id="container">
+	<% @products.each do |product| %>
+		<div class="box">	
+			<div class="image">
+				<%= link_to store_show_path(product_id: product) do %>
+					<%= image_tag(product.image, rel: "group-box", title: "RailsSu.." )%>
+				<% end %>
+			</div>
+			<div class="box-body">
+				<div class="name"><%= link_to product.name, store_show_path(product_id: product) %></div>
+				<div class="desc"><%= truncate(strip_tags(product.description), length: 150) %></div>
+			</div>
+			<div class="box-footer">
+				<p>
+				Post by: <%= link_to product.user.username if product.user %> 
+					<div class="time-form">
+						<% if product.created_at > Time.now.beginning_of_day %>
+							<%="#{time_ago_in_words(product.created_at)} ago"%> 
+						<% else %> 
+							<%= product.created_at.strftime("%b %d, %Y") %>
+						<% end %>
+					</div>					
+				</p>
+			</div>
+		</div>
+	<% end %>
+
+	<div class="pagination-centered">
+		<%= will_paginate @products, renderer: FoundationPagination::Rails %>
+	</div>
+</div>

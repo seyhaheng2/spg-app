@@ -1,0 +1,32 @@
+<div class="header">
+	<div class="header-logo">
+		<%= link_to "RailsSu..", root_path %>
+		<p>we want to shared this all you guys.</p>
+	</div>
+	<ul>
+		<li><%= link_to "Home", root_path %></li>
+		<li><%= link_to "About", store_about_path %></li>
+		<li><%= link_to "Contact", store_about_path %></li>
+		<li><%= link_to "Product", products_path %></li>
+		<li><%= link_to "Blog", store_about_path %></li>
+		<li><%= link_to "UI Element", store_about_path %></li>
+		<li><%= link_to "Table & Typography", store_about_path %></li>
+	</ul>
+	<div class="menu">
+		<div class="search">
+			<%= form_tag root_path, method: :get do %>
+				<%= text_field_tag :query, params[:query], placeholder: 'Search' %>
+			<% end %>
+		
+		<% if user_signed_in? %>
+			<%= link_to '<i class="fa fa-sign-out fa-lg"></i>  Logout'.html_safe, destroy_user_session_path, method: :delete, class: "button tiny alert expand radius" %>
+		<% else %>
+			<%= link_to '<i class="fa fa-sign-in fa-lg"></i>  Login'.html_safe, new_user_session_path, class: "button tiny success expand radius" %>
+		<% end %>
+		</div>
+	</div>
+
+
+</div>
+
+
