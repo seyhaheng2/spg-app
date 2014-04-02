@@ -22,7 +22,11 @@ gem 'aws-sdk'
 
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+group :production do
+	gem 'rails_12factor'
+	gem 'pg'
+end
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
