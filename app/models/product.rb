@@ -18,4 +18,14 @@ class Product < ActiveRecord::Base
 	    scoped
 	  end
 	end
+
+	def previous_product
+	  self.class.first(:conditions => ["name < ?", name], :order => "name desc")
+	end
+
+	def next_product
+	  self.class.first(:conditions => ["name > ?", name], :order => "name asc")
+	end
+
+
 end

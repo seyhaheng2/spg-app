@@ -1,7 +1,9 @@
 <div class="show-form">
 
 <div class="bnt-link">
-  	<%= link_to "More With Google", "http://google.com/search?q=#{@product.name}", :target => "blank", class: "button radius tiny"%>
+	<%= link_to("Previous", @product.previous_product, class: "button radius tiny") if @product.previous_product %>
+	<%= link_to("Next", @product.next_product, class: "button radius success tiny") if @product.next_product %>
+	<%= link_to "More With Google", "http://google.com/search?q=#{@product.name}", :target => "blank", class: "button radius alert tiny", style: "margin-left:20px;"%>
 </div>
 
 <div class="name">

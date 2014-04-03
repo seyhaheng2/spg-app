@@ -221,10 +221,13 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 			border-radius: 6px;	
 	    color:#fff;
 	    border-color:#fff;
-	    margin-bottom:0px;
+}
+.alert-box{
+	margin-bottom: 2rem;	
 }
 .flash-alert{
 	width: 91.5%;
+	margin-bottom: 10px;
 }
 .time-form{
 			margin-top:5px;
