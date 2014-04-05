@@ -15,4 +15,10 @@ class StoreController < ApplicationController
   def show
   	@product = Product.find(params[:product_id])
   end
+       def previous
+        Product.where(["id < ?", id]).last
+      end
+      def next
+        Product.where(["id > ?", id]).first
+      end
 end

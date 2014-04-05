@@ -1,10 +1,12 @@
 <div class="show-form">
 
-<div class="bnt-link">
-	<%= link_to("Previous", @product.previous_product, class: "button radius tiny") if @product.previous_product %>
-	<%= link_to("Next", @product.next_product, class: "button radius success tiny") if @product.next_product %>
-	<%= link_to "More With Google", "http://google.com/search?q=#{@product.name}", :target => "blank", class: "button radius alert tiny", style: "margin-left:20px;"%>
-</div>
+
+	<%= link_to "More With Google", "http://google.com/search?q=#{@product.name}", :target => "blank", class: "button radius alert tiny", style: "margin-left:0px;"%>
+
+    	<%= link_to "Preous", @product.previous if @product.previous.present? %>
+    	<%= link_to "Next", @product.next if @product.next.present? %>
+
+
 
 <div class="name">
   <%= @product.name %>
@@ -14,9 +16,9 @@
   <%= link_to image_tag @product.image, class: "fancybox" %>
 	<div class="desc">
 	  <%= @product.description %>
-	  	<div class="price">
-	  <%# number_to_currency(@product.price) %>
-	</div>
+	  <!-- 	<div class="price">
+	  		<%# number_to_currency(@product.price) %>
+		</div> -->
 	</div>
 </div>
 

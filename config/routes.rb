@@ -1,7 +1,7 @@
 SpgApp::Application.routes.draw do
   resources :products
 
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   get "store/index"
   get "store/about"
   get "store/show"

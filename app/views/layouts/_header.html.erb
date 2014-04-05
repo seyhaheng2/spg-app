@@ -21,7 +21,7 @@
 		<% if user_signed_in? %>
 			<%= link_to '<i class="fa fa-sign-out fa-lg"></i>  Logout'.html_safe, destroy_user_session_path, method: :delete, class: "button tiny alert expand radius" %>
 		<% else %>
-			<%= link_to '<i class="fa fa-sign-in fa-lg"></i>  Login'.html_safe, new_user_session_path, class: "button tiny success expand radius" %>
+			<%= link_to '<i class="fa fa-sign-in fa-lg"></i>  Login'.html_safe, new_user_session_path, class: "button tiny success expand radius box-sa" %>
 		<% end %>
 		</div>
 	</div>

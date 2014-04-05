@@ -1,3 +1,5 @@
+
+
 body{
 	background: #F4F4F4;
 }
@@ -10,8 +12,24 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 input[type="file"], input[type="checkbox"], input[type="radio"], select {
 	border-radius:4px;
 }
+.login-input{
+	margin-top:10px;
+	input[type="text"], input[type="password"], input[type="file"],input[type="checkbox"], input[type="checkbox"],input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+		height:50px;
+		font-size:16px;
+		border :1px solid #099c09; 
+		box-shadow: 0.2px 2.5px 0.2px 0.5px #099c09;
+	}
+	input[type="radio"], select{
+		height:50px;
+		font-size:14px;
+		padding:14px;
+		border :1px solid #099c09; 
+		box-shadow: 0.2px 2.5px 0.2px 0.5px #099c09;
+	}
+}
 .wrapper{
-	margin-top: 60px;
+	padding-top: 60px;
 }
 .header{
 	width: 230px;
@@ -43,6 +61,11 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 				color: #333;
 				&:hover{
 					color: #1ABC9C;	
+					-webkit-transition: 0.3s ease-out alternative;
+					   -moz-transition: 0.3s ease-out alternative;
+					    -ms-transition: 0.3s ease-out alternative;
+					     -o-transition: 0.3s ease-out alternative;
+					        transition: 0.3s ease-out alternative;
 				}
 			}
 		}
@@ -135,13 +158,31 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 }
 .search{
 	padding:20px;
+	input[type="text"] {
+		height:50px;
+		font-size:16px;
+		border :1px solid #099c09; 
+		box-shadow: 0px 3px 0.4px 0px #099c09;
+	}
 }
 .login-form{
+	margin-top:70px;
+	p{
+		margin-top: 10px;
+		margin-left: 95px;
+		font-size: 15px;
+		display: inline-block;
+		a{
+			text-decoration: underline;
+			text-transform: capitalize;
+		}
+	}
 	fieldset{
 	width: 400px;
 	background: #FFF;
 	display: inline;
 	padding-top:0px;
+	padding: 5px 40px 40px 40px;
 	margin:0;
 	-webkit-border-radius: 6px;
 			border-radius: 6px;
@@ -159,7 +200,7 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 	.login-app{
 		display: inline-block;
 		position: absolute;
-		margin-top:90px;
+		margin-top:80px;
 		margin-left:30px;
 		p{
 			color: #667;
@@ -167,16 +208,18 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 			font-family: Copperplate;
 			font-size: 16px;
 			margin-bottom:5px;
+			margin-left: 40px;
 		}
 	}
 }
 .signup-form{
+	margin-top:20px;
 	fieldset{
 	margin:0;
-	width: 400px;
+	width:400px;
 	background: #FFF;
+	padding: 5px 40px 40px 40px;
 	padding-top:0px;
-	display: inline;
 	-webkit-border-radius: 6px;
 			border-radius: 6px;
 		legend{
@@ -187,12 +230,13 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 				font-family: 'Montez',cursive;
 				font-size:45px;
 				text-shadow:0 0 2px;
+				text-align: center;
 			}
 		}
 	}
 	fieldset{
 		padding-top: 0;
-		width: 450px;
+		width: 550px;
 		.large-12{
 			padding:0px;
 			.large-6{
@@ -277,5 +321,13 @@ textarea{
 			color:#fff;
 		}
 	}
-	
+}
+.box-sa{
+	box-shadow: 0px 4px 0px 0px #51A65F;
+	a{
+		font-size: 24px;
+	}
+}
+.menu{
+	margin-top: 100px;
 }
