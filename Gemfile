@@ -20,6 +20,11 @@ gem 'pg_search'
 gem "paperclip"
 gem 'aws-sdk'
 
+gem 'guard-rails', group: :development
+gem 'guard-livereload', group: :development
+gem 'rack-livereload', group: :development
+gem 'guard-bundler', group: :development
+
 
 # Use postgresql as the database for Active Record
 group :production do
