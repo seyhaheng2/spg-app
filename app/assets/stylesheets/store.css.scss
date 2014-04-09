@@ -1,5 +1,6 @@
 
-
+@import url(http://fonts.googleapis.com/css?family=Sonsie+One);
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
 body{
 	background: #F4F4F4;
 }
@@ -37,9 +38,10 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 	.header-logo{
 		text-align: center;
 		a{
-			font-family: 'Montez',cursive;
+			font-family: 'Cinzel', serif;
+			text-shadow:0 0 3px #f3f3f3;
 			color:#16A085;
-			font-size:3.2rem;
+			font-size:2.4rem;
 		}
 		p{
 			padding-left: 50px;
@@ -191,8 +193,8 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 			h4{
 				background: none;
 				margin: 0px;
-				font-family: 'Montez',cursive;
-				font-size:45px;
+				font-family: 'Cinzel', serif;
+				font-size:30px;
 				text-shadow:0 0 2px;
 			}
 		}
@@ -200,7 +202,7 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 	.login-app{
 		display: inline-block;
 		position: absolute;
-		margin-top:80px;
+		margin-top:65px;
 		margin-left:30px;
 		p{
 			color: #667;
@@ -227,8 +229,8 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 			h4{
 				background: none;
 				margin: 0px;
-				font-family: 'Montez',cursive;
-				font-size:45px;
+				font-family: 'Cinzel', serif;
+				font-size:30px;
 				text-shadow:0 0 2px;
 				text-align: center;
 			}
