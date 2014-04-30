@@ -1,13 +1,7 @@
 <div class="show-form">
 
 
-	<%= link_to "More With Google", "http://google.com/search?q=#{@product.name}", :target => "blank", class: "button radius alert tiny", style: "margin-left:0px;"%>
-
-    	<%= link_to "Preous", @product.previous if @product.previous.present? %>
-    	<%= link_to "Next", @product.next if @product.next.present? %>
-
-
-
+	<%#= link_to "More With Google", "http://google.com/search?q=#{@product.name}", :target => "blank", class: "button radius alert tiny", style: "margin-left:0px;"%>
 <div class="name">
   <%= @product.name %>
 </div>
