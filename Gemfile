@@ -16,6 +16,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
 gem 'foundation-datetimepicker-rails'
+gem 'rails_12factor', group: :production
 gem 'pg_search'
 gem "paperclip"
 gem 'aws-sdk'
